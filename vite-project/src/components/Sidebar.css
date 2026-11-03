@@ -1,0 +1,182 @@
+.sidebar {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background: #111827;
+
+    color: white;
+
+    box-sizing: border-box;
+
+    padding: 20px 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 8px 25px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.logo-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #4f46e5;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Sections */
+
+.sidebar-section {
+    margin-top: 25px;
+}
+
+.section-title {
+    margin: 0 0 10px 12px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #6b7280;
+}
+
+
+/* Navigation */
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 13px;
+
+    margin-bottom: 5px;
+
+    border-radius: 8px;
+
+    color: #9ca3af;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+    background: rgba(255,255,255,0.06);
+
+    color: white;
+}
+
+.sidebar-link.active {
+    background: #4f46e5;
+
+    color: white;
+
+    box-shadow: 0 4px 12px rgba(79,70,229,0.25);
+}
+
+
+/* Icons */
+
+.sidebar-icon {
+    width: 22px;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+/* Bottom user */
+
+.sidebar-user {
+    margin-top: auto;
+
+    padding: 15px 8px 5px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #4f46e5;
+
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.user-info strong {
+    font-size: 13px;
+}
+
+.user-info span {
+    font-size: 11px;
+
+    color: #6b7280;
+}
+.sidebar-link:hover {
+    background: #374151;
+    color: white;
+}
+
+.sidebar-link.active {
+    background: #4f46e5;
+    color: white;
+}
